@@ -5,12 +5,12 @@
         static void Main(string[] args)
         {
             Console.Write("Enter the number of people in the group: ");
-            int groupsize = Convert.ToInt32(Console.ReadLine());
+            int people = Convert.ToInt32(Console.ReadLine());
 
             int ticketprice = 15;
-            int totalCost = groupsize * ticketprice;
+            int totalCost = people * ticketprice;
 
-            if (groupsize >= 6)
+            if (people >= 6)
             {
                 totalCost -= 5;
             }
